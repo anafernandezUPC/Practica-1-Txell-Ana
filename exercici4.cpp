@@ -1,6 +1,6 @@
 
-// CODIS UTILITZATS PER PODER RESPONDRE LES PREGUNTES DE L'APARTAT 4 UTILITZANT L'OSCIL�LOSCOPI
-     // ELS CODIS ESTAN COMENTATS, JA QUE NOM�S ES POT UTILITZAR UNA PART DEL CODI A LA VEGADA.
+// CODIS UTILITZATS PER PODER RESPONDRE LES PREGUNTES DE L'APARTAT 4 UTILITZANT L'OSCIL·LOSCOPI
+     // ELS CODIS ESTAN COMENTATS, JA QUE NOMÉS ES POT UTILITZAR UNA PART DEL CODI A LA VEGADA.
      // SI DESCOMENTEU LA PART DEL CODI QUE VOLEU EXECUTAR, PODREU PROVAR CADA APARTAT SEPARADAMENT.
 
 
@@ -11,11 +11,11 @@
 
 
 // ------------------------------------------------------------------------------------------------------------
-// APARTAT 1: Amb l�enviament del missatge pel port s�rie i utilitzant les funcions d�Arduino.
+// APARTAT 1: Amb l’enviament del missatge pel port sèrie i utilitzant les funcions d’Arduino.
 /* 
 void setup() {
   pinMode(LED_BUILTIN, OUTPUT);  // Configurar el pin como salida
-  Serial.begin(115200);          // Inicializar la comunicación serial
+  Serial.begin(115200);          // Inicializar la comunicaciÃ³n serial
 }
 
 void loop() {
@@ -33,30 +33,30 @@ void loop() {
 
 
 // ----------------------------------------------------------------------------------------------------------------
-// APARTAT 2:  Amb l�enviament del missatge pel port s�rie i accedint directament als registres
+// APARTAT 2:  Amb l’enviament del missatge pel port sèrie i accedint directament als registres
 /*
 void setup() {
-  // Establir el pin com a sortida directament a través dels registres
-  pinMode(LED_PIN, OUTPUT); // Això segueix sent necessari
-  Serial.begin(115200);     // Inicialitzar la comunicació sèrie
+  // Establir el pin com a sortida directament a travÃ©s dels registres
+  pinMode(LED_PIN, OUTPUT); // AixÃ² segueix sent necessari
+  Serial.begin(115200);     // Inicialitzar la comunicaciÃ³ sÃ¨rie
 }
 
 void loop() {
   // Engegar el LED utilitzant el registre GPIO
   uint32_t *gpio_out = (uint32_t *)GPIO_OUT_REG;
   *gpio_out |= (1 << LED_PIN);  // Activar el bit corresponent al pin 2
-  Serial.println("ON");         // Enviar "ON" pel port sèrie
+  Serial.println("ON");         // Enviar "ON" pel port sÃ¨rie
   
   
   // Apagar el LED utilitzant el registre GPIO
   *gpio_out &= ~(1 << LED_PIN); // Desactivar el bit corresponent al pin 2
-  Serial.println("OFF");        // Enviar "OFF" pel port sèrie
+  Serial.println("OFF");        // Enviar "OFF" pel port sÃ¨rie
   }
 
 */
 
 // ------------------------------------------------------------------------------------------------------------------
-// APARTAT 3: Sense l�enviament del missatge pel port s�rie i utilitzant les funcions d�Arduino.
+// APARTAT 3: Sense l’enviament del missatge pel port sèrie i utilitzant les funcions d’Arduino.
 /*
 void setup() {
     pinMode(LED_BUILTIN, OUTPUT);  // Definir el pin del LED como salida
@@ -72,7 +72,7 @@ void loop() {
 */
 
 // ---------------------------------------------------------------------------------------------------------------------
-// APARTAT 4: Sense l�enviament del missatge pel port s�rie i accedint directment als registres.
+// APARTAT 4: Sense l’enviament del missatge pel port sèrie i accedint directment als registres.
 
 /*
 void setup() {
