@@ -5,7 +5,7 @@
 
 void setup() {
   pinMode(LED_BUILTIN, OUTPUT);  // Configurem el pin del LED com a pin de sortida
-  Serial.begin(115200);          // Iniciem la comunicació amb el port sèrie
+  Serial.begin(115200);          // Iniciem la comunicaciÃ³ amb el port sÃ¨rie
 }
 
 void loop() {
